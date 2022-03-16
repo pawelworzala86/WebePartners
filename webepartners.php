@@ -138,10 +138,17 @@ function import_data_from_xml($program_id){
     $table_name = $wpdb->prefix . 'webepartners_programs';
     $results = $wpdb->get_results( "SELECT program_url FROM ".$table_name." where program_id=".$program_id);
 
-    $data = file_get_contents($results[0]->program_url);
+    //$data = file_get_contents($results[0]->program_url);
+    $data = file_get_contents(plugin_dir_path( __FILE__ ) .'/a1b89ba2-c4b8-4516-a10c-70cd5c0e4148.xml');
     $xml = simplexml_load_string($data);
 
+    
+
     foreach($xml->offers[0]->offer as $offer){     
+        //print_r($offer);
+        //exit;
+
+
         $my_post = array(
             'post_title'    => wp_strip_all_tags( (string)$offer->name ),
             'post_content'  => (string)$offer->description,
@@ -204,7 +211,7 @@ function import_data_from_xml($program_id){
                     'field'=>'slug',
                     'value'=>(string)$offer->id,
                     'compare' => '=',
-                    'type' => 'numeric',
+                    'type' => 'text',
                 ),
             )
         );
