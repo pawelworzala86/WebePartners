@@ -1,0 +1,212 @@
+.offers {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+.offers .offer {
+    flex: 23%;
+    display: flex;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #ccc8;
+    margin: 10px;
+    margin-bottom: 25px;
+}
+.offers .offer .img{
+    height: 75%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    overflow: hidden;
+}
+.offers .offer .img img{
+}
+.offers .offer .title{
+    font-size: 0.85em;
+    margin: 5px;
+    text-align: center;
+    margin-top: 15px;
+}
+.offers .offer .description{
+    display: none;
+    flex: 1;
+}
+.offers .offer .price{
+    font-size: 1.1em;
+    position: absolute;
+    bottom: 5px;
+    font-weight: 600;
+    color: #e21010;
+    right: 10px;
+}
+.offers .offer .link{
+    display: flex;
+}
+.offers .offer .producer{
+    font-weight: 500;
+    font-size: 0.75em;
+    margin-left: 10px;
+    bottom: 8px;
+    position: absolute;
+}
+.offers .offer .link a{
+    background: #ccc;
+    padding: 5px 10px;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 5px;
+}
+.offers .offer a{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    padding-bottom: 35px;
+    position: relative;
+}
+.catalogs{
+    text-align: center;
+    padding: 25px;
+}
+.catalogs .catalog {
+    display: inline-block;
+}
+.catalogs .catalog a{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: 5px 10px;
+    font-size: 1.2em;
+}
+
+.producers{
+    text-align: center;
+    margin: 25px;
+}
+.producers .producer{
+    display: inline-block;
+}
+.producers .producer a{
+    color: #666 !important;
+    margin: 10px;
+    font-size: 0.9em;
+}
+
+main input,
+main input[type="text"],
+main button,
+main button[type="button"]{
+    padding: 4px 8px !important;
+    display: inline-block !important;
+    width: auto !important;
+    color: #000 !important;
+    border: 1px solid #bfbfbf !important;
+    margin: 0 5px;
+    font-size: 14px;
+}
+main button,
+main button[type="button"]{
+    background: #cccccc44 !important;
+    outline: none !important;
+}
+
+main a{
+    color: #000 !important;
+}
+
+main{
+    padding: 0 25px;
+}
+
+#pagination{
+    text-align: center;
+    margin: 50px;
+    margin-bottom: 0;
+    font-size: 1.15em;
+}
+#pagination .page-numbers{
+    color: #666 !important;
+    margin: 0 3px;
+}
+
+.filters{
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.filters .left{
+    float:left;
+}
+.filters .right{
+    float:right;
+}
+.filters .right a{
+    margin: 0 10px;
+    margin-left: 0;
+    font-size: 0.8em;
+    position: relative;
+    top: 5px;
+    color: #666 !important;
+}
+.filters .price{
+    width: 85px !important;
+}
+
+main .active,
+main a.active,
+main .filters div a.active,
+main :not(.offer)>a:hover,
+main .producers div a:hover,
+main .producers .producer.active a, 
+main input[type="text"],
+main #pagination .page-numbers:hover,
+main #pagination .page-numbers.current{
+    color: #e21010 !important;
+    font-weight: 700 !important;
+    cursor: pointer;
+}
+
+main h1{
+    text-align: center;
+    margin: 0;
+    margin-top: 35px;
+    font-size: 1.85em;
+    color: #e21010;
+}
+
+main h3{
+    text-align: center;
+    width: 100%;
+    font-size: 1.4em;
+    margin: 0;
+    margin-top: 35px;
+}
+
+
+.breadcumbs{
+    text-align: center;
+    margin-top: 35px;
+    margin-bottom: -20px;
+}
+.breadcumbs a{
+    margin: 0 5px;
+    font-size: 0.8em;
+}
+
+main a{
+    cursor: pointer;
+}
+
+
+::placeholder {
+    color: #999;
+    opacity: 1;
+    font-weight: 400;
+}
+:-ms-input-placeholder {
+    color: #999;
+    font-weight: 400;
+}
+::-ms-input-placeholder {
+    color: #999;
+    font-weight: 400;
+}

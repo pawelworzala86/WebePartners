@@ -17,3 +17,22 @@ if ( ! defined( 'WPINC' ) ) {die;} // end if
 if ( file_exists( plugin_dir_path( __FILE__ ) . 'core-init.php' ) ) {
 require_once( plugin_dir_path( __FILE__ ) . 'core-init.php' );
 }
+
+
+
+
+
+
+
+
+add_action('admin_menu', 'test_plugin_setup_menu');
+ 
+function test_plugin_setup_menu(){
+    add_menu_page( 'Test Plugin Page', 'Test Plugin', 'manage_options', 'test-plugin', 'test_init' );
+}
+ 
+function test_init(){
+    echo "<h1>Hello World!</h1>";
+}
+
+//https://service.weben1.com/xml/a1b89ba2-c4b8-4516-a10c-70cd5c0e4148.xml
