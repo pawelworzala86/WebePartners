@@ -1,7 +1,5 @@
-# webepartners.wordpress.plugin
+# WebePrtners wordpress plugin
 
-after instalation add name and url to xml
-import data..
-
-w treśći strony
-[webepartners_posts]
+importer bez GUI
+w PA tylko button import
+import z defaultowego pliku
